@@ -1,3 +1,43 @@
-Okay, I want to give a talk about creating things that aren't code from AI. There's three things I want to introduce in the beginning. One is dad's workout video. And the key part here is that I used agentic to create a Python script that created an MP3. Two, I want to talk about creating the flowchart with Jacqueline. And the key part here is that I'm using AI to iteratively build a mermaid for a very complicated diagram that I can never create this mermaid by hand. And then three is creating the SVG for spoons. And the idea here is that I can do the same process to create diagrams now in my slides. That renders. And that allows me to create stuff. And then I want to start with the importance of journaling. And I think I want to talk next about using journaling at the retreat. And what it created. And then I want to talk about using the interview process to do my daily statuses. And then I want to talk about switching that to, okay, do you vomit or do you interview? I think in the end, there's maybe a bit of both. I think interviews give vomit and vomit leads to interviews. But all of this creates this core data. And that data then can be analyzed as an individual coach for so many different places. Blogs, daily status, images, weaknesses, strengths. Things I don't know about, blind spots, patterns. There's so many different ways a coach would look at any given thing and help you. And now you have this raw data that can get there. I also at some point want to talk about creating the document that outlines how to do the builder pattern. And I want to talk about using it for naming. That's a thing I think is really powerful as well.
+I want to give a talk about creating things that aren't code from AI.
 
-I'm going to need to introduce a bunch of patterns as well so that people can understand. Obviously the interview and vomit pattern, but checkpoints, knowledge documents, reverse direction, cast wide or multiple solutions, iterative process. I think all those are going to be needed.
+## Introduction: 3 Examples
+
+1. Dad's workout video.
+The key part is that I used agentic to create a Python script that created an MPeg video.
+
+2. Creating the flowchart with Jacqueline.
+The key part is that I'm using AI to iteratively build a Mermaid diagram for a very complicated flowchart that I could never create by hand.
+
+3. Creating the SVG for spoons.
+The idea is that I can do the same process to create diagrams in my slides that render.
+This allows me to create stuff.
+
+## Talk Structure
+
+Start with the importance of journaling.
+Then talk about using journaling at the retreat and what it created.
+Then talk about using the interview process to do my daily statuses.
+Then talk about: do you vomit or do you interview?
+In the end, there's maybe a bit of both.
+Interviews lead to vomit and vomit leads to interviews.
+
+But all of this creates core data.
+That data can then be analyzed as an individual coach for so many different purposes: blogs, daily status, images, weaknesses, strengths, blind spots, patterns.
+There are so many different ways a coach would look at any given thing and help you.
+Now you have this raw data to get there.
+
+I also want to talk about creating the document that outlines how to do the builder pattern.
+And I want to talk about using AI for naming.
+That's really powerful as well.
+
+## Patterns to Introduce
+
+I'm going to need to introduce a bunch of patterns so that people can understand:
+- Interview and vomit pattern
+- Checkpoints
+- Knowledge documents
+- Reverse direction
+- Cast wide / multiple solutions
+- Iterative process
+
+Other concepts. Building a second brain. Capture, distill, whatever that pattern is. Clean language. Iterative. AI as an NPC or non-playing character. People as an NPC.
