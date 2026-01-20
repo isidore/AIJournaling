@@ -40,6 +40,9 @@ graph TD
         PushBack --> CreateAnalysis
     end
     
+    SayAnalysis[say -f journal.analysis.md]:::tools
+    ReviewAnalysis[Review one more time]:::manual
+    
     Start --> Whisper
     Whisper --> Vomit
     Vomit --> Commit
@@ -51,7 +54,8 @@ graph TD
     Review --> Commit2
     Commit2 --> Analyze
     Analyze --> Read
-    CreateAnalysis --> End[End]
+    CreateAnalysis --> ReviewAnalysis
+    SayAnalysis --> ReviewAnalysis
     
     classDef tools fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     classDef output fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
