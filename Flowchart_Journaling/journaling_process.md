@@ -22,19 +22,19 @@ graph TD
     Talk[Talk]:::manual
     Vomit[Vomit version]:::output
     Commit[git commit]:::tools
-    Cleanup[Run cleanup process]:::processing
+    Cleanup[Cleanup]:::processing
     People[people.md]:::processing
-    V1[Version 1 of document]:::output
+    V1[V1]:::output
     Say[say -f journal_2025_10_1.md]:::tools
-    Review[Review document]:::manual
+    Review[Review]:::manual
     Commit2[git commit]:::tools
     Analyze[analyze]:::processing
     
     subgraph Interview
         Read[Read today's journal +<br/>previous journals +<br/>previous analysis]:::processing
-        Ask[Ask questions for clarification]:::manual
-        PushBack[Push back on things]:::manual
-        CreateAnalysis[Create journal.analysis.md]:::processing
+        Ask[Ask questions]:::manual
+        PushBack[Push back]:::manual
+        CreateAnalysis[journal.analysis.md]:::processing
         
         Read --> Ask
         Ask --> PushBack
@@ -42,7 +42,7 @@ graph TD
     end
     
     SayAnalysis[say -f journal.analysis.md]:::tools
-    ReviewAnalysis[Review one more time]:::manual
+    ReviewAnalysis[Final review]:::manual
     
     Start --> Whisper
     Whisper --> Talk
