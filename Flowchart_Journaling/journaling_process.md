@@ -29,6 +29,17 @@ graph TD
     Commit2[Git commit]:::tools
     Analyze[analyze]:::processing
     
+    subgraph Interview
+        Read[Read today's journal +<br/>previous journals +<br/>previous analysis]:::processing
+        Ask[Ask questions for clarification]:::manual
+        PushBack[Push back on things]:::manual
+        CreateAnalysis[Create journal.analysis.md]:::processing
+        
+        Read --> Ask
+        Ask --> PushBack
+        PushBack --> CreateAnalysis
+    end
+    
     Start --> Whisper
     Whisper --> Vomit
     Vomit --> Commit
@@ -39,6 +50,8 @@ graph TD
     Say --> Review
     Review --> Commit2
     Commit2 --> Analyze
+    Analyze --> Read
+    CreateAnalysis --> End[End]
     
     classDef tools fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     classDef output fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
