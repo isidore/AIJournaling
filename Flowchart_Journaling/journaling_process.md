@@ -4,10 +4,10 @@
 ```mermaid
 graph LR
     A[Tools]:::tools
-    B[Output/Result]:::output
-    C[Processing]:::processing
+    B[Intermediate Result]:::output
+    C[Knowledge Document]:::processing
     
-    classDef tools fill:#9c27b0,stroke:#4a148c,stroke-width:2px,color:#fff
+    classDef tools fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     classDef output fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
     classDef processing fill:#ffe0b2,stroke:#e65100,stroke-width:2px
 ```
@@ -26,7 +26,7 @@ graph TD
     Vomit --> Commit
     Commit --> Cleanup
     
-    classDef tools fill:#9c27b0,stroke:#4a148c,stroke-width:2px,color:#fff
+    classDef tools fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     classDef output fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
     classDef processing fill:#ffe0b2,stroke:#e65100,stroke-width:2px
 ```
