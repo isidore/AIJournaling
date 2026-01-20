@@ -22,6 +22,7 @@ graph TD
     Cleanup[Run cleanup process]:::processing
     People[people.md]:::processing
     V1[Version 1 of document]:::output
+    Say[say -f journal_2025_10_1.md]:::tools
     
     Start --> Whisper
     Whisper --> Vomit
@@ -29,6 +30,7 @@ graph TD
     Commit --> Cleanup
     People --> Cleanup
     Cleanup --> V1
+    V1 --> Say
     
     classDef tools fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     classDef output fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
