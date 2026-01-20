@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Export Mermaid diagrams from a markdown file to SVG
+
+if [ -z "$1" ]; then
+    echo "Usage: export_mermaid <filename>"
+    exit 1
+fi
+
+input_file="$1"
+
+if [ ! -f "$input_file" ]; then
+    echo "Error: File '$input_file' not found"
+    exit 1
+fi
+
+# Get directory and base filename without extension
+dir=$(dirname "$input_file")
+base=$(basename "$input_file" .md)
+output_file="$dir/$base.svg"
+
+# Run mermaid-cli
+mmdc -i "$input_file" -o "$output_file"
+
+if [ $? -eq 0 ]; then
+    echo "Exported to: $output_file"
+else
+    echo "Error: Export failed"
+    exit 1
+fi
