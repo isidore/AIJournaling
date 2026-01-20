@@ -19,12 +19,16 @@ graph TD
     Whisper[Open SuperWhisper and talk]:::tools
     Vomit[Get vomit version of journal]:::output
     Commit[Git commit to check in]:::tools
-    Cleanup[Run cleanup process<br/>includes people.md]:::processing
+    Cleanup[Run cleanup process]:::processing
+    People[people.md]:::processing
+    V1[Version 1 of document]:::output
     
     Start --> Whisper
     Whisper --> Vomit
     Vomit --> Commit
     Commit --> Cleanup
+    People --> Cleanup
+    Cleanup --> V1
     
     classDef tools fill:#e1f5ff,stroke:#01579b,stroke-width:2px
     classDef output fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
