@@ -17,16 +17,17 @@ graph LR
 ## Process Flow
 ```mermaid
 graph TD
-    Start[Create empty markdown file]:::tools
-    Whisper[Open SuperWhisper and talk]:::tools
-    Vomit[Get vomit version of journal]:::output
-    Commit[Git commit to check in]:::tools
+    Start[Create journal.md]:::tools
+    Whisper[SuperWhisper]:::tools
+    Talk[Talk]:::manual
+    Vomit[Vomit version]:::output
+    Commit[git commit]:::tools
     Cleanup[Run cleanup process]:::processing
     People[people.md]:::processing
     V1[Version 1 of document]:::output
     Say[say -f journal_2025_10_1.md]:::tools
     Review[Review document]:::manual
-    Commit2[Git commit]:::tools
+    Commit2[git commit]:::tools
     Analyze[analyze]:::processing
     
     subgraph Interview
@@ -44,7 +45,8 @@ graph TD
     ReviewAnalysis[Review one more time]:::manual
     
     Start --> Whisper
-    Whisper --> Vomit
+    Whisper --> Talk
+    Talk --> Vomit
     Vomit --> Commit
     Commit --> Cleanup
     People --> Cleanup
