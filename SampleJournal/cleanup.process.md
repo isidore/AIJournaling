@@ -22,4 +22,4 @@ This process takes text from speech-to-text transcription and cleans it up.
    - Put dialogue in quotes
    - Use blockquotes (>) for longer or significant quoted sections, still including quotation marks
    - Keep changes minimal
-5. (Optional) Suggest a descriptive title suffix to add to the filename based on the content's main theme
+5. Suggest a handful of descriptive title suffix to add to the filename based on the content's main theme
