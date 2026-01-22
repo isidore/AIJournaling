@@ -7,7 +7,7 @@
 6. Ask questions to help me explore and clarify
 7. Create an analysis file (e.g., `2026-01-20-Tuesday.analysis.md`) that captures:
    - Core patterns and shifts
-   - Brutal truths
+   - Honest Takes
    - Questions that matter
 
 ## Your Role
